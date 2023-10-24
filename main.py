@@ -139,7 +139,7 @@ month_list = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oc
 month = input("Enter the month of the year (Jan - Dec): ")
 shortened_month = month[0:3].lower()
 date = int(input("Enter the date of the month: "))
-if date > 0 or date < 32:
+if date < 0 or date > 32:
    print("Get your dates right, yea?")
 else: 
     if shortened_month in month_list[0:3] or shortened_month == month_list[11]:
