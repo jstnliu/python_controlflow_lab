@@ -136,27 +136,58 @@ for n in range(50):
 # the day number falls within a certain range.
 
 month_list = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-month = input("Enter the month of the year (Jan - Dec): ").lower()
-shortened_month = month[0:3]
+month = input("Enter the month of the year (Jan - Dec): ")
+shortened_month = month[0:3].lower()
 date = int(input("Enter the date of the month: "))
-if shortened_month in month_list[0:3] or shortened_month == month_list[11]:
-    for n in range(1, 32):
-        if date == n and shortened_month == month_list[0:2]:
+if date > 1 or date < 32:
+   print("Get your dates right, yea?")
+else: 
+    if shortened_month in month_list[0:3] or shortened_month == month_list[11]:
+        if shortened_month == month_list[0] and (date >= 1 or date <= 31):
             print(f"{month} {date} is in Winter")
-        elif shortened_month == month_list[2] or shortened_month == month_list[11]:
-           if shortened_month == month_list[2] and (n > 1 or n < 21):
-              print(f"{month} {date} is in Winter")
-           elif shortened_month == month_list[11] and (n > 21 or n < 32):
-              print(f"{month} {date} is in Winter")
-           else:
-              break
-#     print(f"{month} {date} is in Winter") 
-# if shortened_month == ('apr', 'may'):
-#     print(f"{month} {date} is in Spring") 
-# if shortened_month == ('jul', 'aug'):
-#     print(f"{month} {date} is in Summer")
-# if shortened_month == ('oct', 'nov'):
-#     print(f"{month} {date} is in Fall")
-# # for d in range(1, 32):
-# if shortened_month + date == 
+        elif shortened_month == month_list[1] and (date >= 1 or date <= 29):
+            print(f"{month} {date} is in Winter")
+        else:
+            if shortened_month == month_list[2] and (date >= 1 or date <= 19):
+                print(f"{month} {date} is in Winter")
+            elif shortened_month == month_list[11] and (date >= 1 or date < 21):
+                print(f"{month} {date} is in Winter")
+            else:
+                next 
+    if shortened_month in month_list[2:6]:
+        if shortened_month == month_list[3] and (date >= 1 or date <= 30):
+            print(f"{month} {date} is in Spring")
+        elif shortened_month == month_list[4] and (date > 0 or date <= 31):
+            print(f"{month} {date} is in Spring")
+        else:
+            if shortened_month == month_list[2] and (date >= 20 or date <= 31):
+                print(f"{month} {date} is in Spring")
+            elif shortened_month == month_list[5] and (date >= 1 or date <= 20):
+                print(f"{month} {date} is in Spring")
+            else:
+                next 
+    if shortened_month in month_list[5:9]:
+        if shortened_month == month_list[6] and (date >= 1 or date <= 31):
+            print(f"{month} {date} is in Summer")
+        elif shortened_month == month_list[7] and (date > 0 or date <= 31):
+            print(f"{month} {date} is in Summer")
+        else:
+            if shortened_month == month_list[5] and (date >= 21 or date <= 30):
+                print(f"{month} {date} is in Summer")
+            elif shortened_month == month_list[8] and (date >= 1 or date <= 21):
+                print(f"{month} {date} is in Summer")
+            else:
+                next 
+    if shortened_month in month_list[8:-1]:
+        if shortened_month == month_list[9] and (date >= 1 or date <= 31):
+            print(f"{month} {date} is in Fall")
+        elif shortened_month == month_list[10] and (date >= 1 or date <= 30):
+            print(f"{month} {date} is in Fall")
+        else:
+            if shortened_month == month_list[8] and (date >= 22 or date <= 30):
+                print(f"{month} {date} is in Fall")
+            if shortened_month == month_list[11] and (date >= 1 or date < 20):
+                print(f"{month} {date} is in Fall")
+    
+
 
