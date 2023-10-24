@@ -150,7 +150,7 @@ else:
         else:
             if shortened_month == month_list[2] and (date >= 1 or date <= 19):
                 print(f"{month} {date} is in Winter")
-            elif shortened_month == month_list[11] and (date >= 1 or date < 21):
+            elif shortened_month == month_list[11] and (date >= 1 or date <= 21):
                 print(f"{month} {date} is in Winter")
             else:
                 next 
@@ -186,7 +186,7 @@ else:
         else:
             if shortened_month == month_list[8] and (date >= 22 or date <= 30):
                 print(f"{month} {date} is in Fall")
-            if shortened_month == month_list[11] and (date >= 1 or date < 20):
+            if shortened_month == month_list[11] and (date >= 1 or date <= 20):
                 print(f"{month} {date} is in Fall")
     
 
