@@ -31,10 +31,8 @@
 #   phrase = input('Please enter a word or phrase: ')
 #   if phrase == 'quit':
 #     break
-#   print(f'What you entered is {len(phrase)}               characters long')
+#   print(f'What you entered is {len(phrase)} characters long')
   
-
-
 
 # exercise-03 Calculate Dog Years
 
@@ -50,13 +48,12 @@
 # Hints:
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
+
 # age = int(input("Input a dog's age: "))
 # if age < 3: 
 #   print(f"The dog's age is {age * 10} years")
 # else:
 #   print(f"The dog's age is {(age - 2) * 7 + 20}")
-
-
 
 
 # exercise-04 What kind of Triangle?
@@ -74,9 +71,15 @@
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
-
-
-
+# a = input("Enter a side: ")
+# b = input("Enter a second side: ")
+# c = input("Enter a third side: ")
+# if a == b and a == c:
+#     print(f"A triangle with sides of {a, b, c} is an equilateral triangle - all three sides are equal in length")
+# elif a != b and a != c and c!= b:
+#     print(f"A triangle with sides of {a, b, c} is a scalene triangle - all three sides are not equal")
+# else:
+#     print(f"A triangle with sides of {a, b, c} is an isosceles triangle - exactly two sides are equal")
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -97,8 +100,15 @@
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
-
-
+# n = 0
+# x = 0
+# y = 1
+# for n in range(50):
+#     print(f"term {n} / number {x}")
+#     n += 1
+#     z = x
+#     x = y
+#     y = z + x
 
 
 # exercise-06 What's the Season?
@@ -122,3 +132,24 @@
 #
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
+
+month_list = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+month = input("Enter the month of the year (Jan - Dec): ").lower()
+shortened_month = month[0:3]
+date = int(input("Enter the date of the month: "))
+if shortened_month in month_list[0:3] or shortened_month == month_list[11]:
+    for n in range(1, 32):
+        if date == n and shortened_month == month_list[0:2]
+        print(f"{month} {date} is in Winter")
+    elif 
+
+    print(f"{month} {date} is in Winter") 
+if shortened_month == ('apr', 'may'):
+    print(f"{month} {date} is in Spring") 
+if shortened_month == ('jul', 'aug'):
+    print(f"{month} {date} is in Summer")
+if shortened_month == ('oct', 'nov'):
+    print(f"{month} {date} is in Fall")
+# for d in range(1, 32):
+if shortened_month + date == 
+
